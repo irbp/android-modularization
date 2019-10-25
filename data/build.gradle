@@ -2,6 +2,11 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
+repositories {
+    jcenter()
+}
+
+
 android {
     def globalConfiguration = rootProject.extensions.getByName("ext")
 
@@ -16,10 +21,19 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+            unitTests.returnDefaultValues = true
+        }
+    }
+
 }
 
 dependencies {
     def dependencies = rootProject.ext.dependencies
+    def testDependencies = rootProject.ext.testDependecies
 
     implementation project(":domain")
 
@@ -36,4 +50,15 @@ dependencies {
     kapt dependencies.roomCompiler
 
     implementation dependencies.koin
+
+    testImplementation testDependencies.junit
+    testImplementation testDependencies.jupiter
+    testImplementation testDependencies.mockitoKotlin
+    testImplementation testDependencies.kotlinJUnit
+    testImplementation testDependencies.spekDsl
+    testImplementation testDependencies.spekJunit
+    testImplementation testDependencies.junitPlatformRunner
+    testImplementation testDependencies.koinTest
+
+    testRuntimeOnly dependencies.kotlinReflect
 }

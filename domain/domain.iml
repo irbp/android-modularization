@@ -4,6 +4,8 @@
     <facet type="android-gradle" name="Android-Gradle">
       <configuration>
         <option name="GRADLE_PROJECT_PATH" value=":domain" />
+        <option name="LAST_SUCCESSFUL_SYNC_AGP_VERSION" />
+        <option name="LAST_KNOWN_AGP_VERSION" />
       </configuration>
     </facet>
     <facet type="java-gradle" name="Java-Gradle">
@@ -13,16 +15,14 @@
       </configuration>
     </facet>
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JVM 1.6" useProjectSettings="false">
+      <configuration version="3" platform="JVM 1.6" allPlatforms="JVM [1.6]" useProjectSettings="false" pureKotlinSourceFolders="$MODULE_DIR$/src/test/kotlin;/Users/iagomendesfucolo/Desktop/workspace/opensources/android-my-bootcamp/android-modularization/domain/src/main/kotlin">
         <compilerSettings />
         <compilerArguments>
           <option name="destination" value="$MODULE_DIR$/build/classes/kotlin/main" />
-          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.7/394ee6d9e141acb9fbf9daf228fd8cd789eaa49a/rxjava-2.2.7.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.koin/koin-android/1.0.2/1797e0aa960fb5dec14d2bf3ad6e4bfdf5f722bc/koin-android-1.0.2.aar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/1.0.2/dff622d5690377492970afd65e952c771a9a3448/koin-core-1.0.2.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.21/4bcc2012b84840e19e1e28074284cac908be0295/kotlin-stdlib-1.3.21.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.21/f30e4a9897913e53d778f564110bafa1fef46643/kotlin-stdlib-common-1.3.21.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
+          <option name="classpath" value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.3.21/d207ce2c9bcf17dc8e51bab4dbfdac4d013e7138/kotlin-stdlib-jdk7-1.3.21.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.2.7/394ee6d9e141acb9fbf9daf228fd8cd789eaa49a/rxjava-2.2.7.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.koin/koin-android/2.0.1/894828a48f5167b9ed32c71e1f2f727351e7a7c6/koin-android-2.0.1.aar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.koin/koin-core/2.0.1/86ae7f8b8abdbbdb513e472830962361e7a3d646/koin-core-2.0.1.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.31/11289d20fd95ae219333f3456072be9f081c30cc/kotlin-stdlib-1.3.31.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.2/323964c36556eb0e6209f65c1cef72b53b461ab8/reactive-streams-1.0.2.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.31/20c34a04ea25cb1ef0139598bd67c764562cb170/kotlin-stdlib-common-1.3.31.jar:/Users/iagomendesfucolo/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
           <option name="noStdlib" value="true" />
           <option name="noReflect" value="true" />
           <option name="moduleName" value="domain" />
-          <option name="addCompilerBuiltIns" value="true" />
-          <option name="loadBuiltInsFromDependencies" value="true" />
           <option name="languageVersion" value="1.3" />
           <option name="apiVersion" value="1.3" />
           <option name="pluginOptions">
@@ -43,11 +43,11 @@
     <output-test url="file://$MODULE_DIR$/build/classes/java/test" />
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/kotlin" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/kotlin" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
       <excludeFolder url="file://$MODULE_DIR$/build" />
@@ -56,11 +56,43 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-jdk7-1.3.21" level="project" />
     <orderEntry type="library" exported="" name="Gradle: rxjava-2.2.7" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: koin-android-1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: koin-core-1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-1.3.21" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: koin-android-2.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: koin-core-2.0.1" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-1.3.31" level="project" />
     <orderEntry type="library" exported="" name="Gradle: reactive-streams-1.0.2" level="project" />
-    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-common-1.3.21" level="project" />
+    <orderEntry type="library" exported="" name="Gradle: kotlin-stdlib-common-1.3.31" level="project" />
     <orderEntry type="library" exported="" name="Gradle: annotations-13.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-test-junit-1.3.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-launcher-1.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-suite-api-1.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-jupiter-api-5.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-engine-1.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-commons-1.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-platform-runner-1.6.0-M1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: koin-test-2.0.1" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: junit-4.12" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-kotlin-2.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spek-dsl-jvm-2.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spek-runner-junit5-2.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-test-1.3.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: hamcrest-core-1.3" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: apiguardian-api-1.1.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: opentest4j-1.2.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-inline-2.21.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: mockito-core-2.23.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-test-annotations-common-1.3.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-test-common-1.3.21" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-1.9.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: byte-buddy-agent-1.9.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: objenesis-2.6" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: spek-runtime-jvm-2.0.8" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-stdlib-jdk8-1.3.50" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-stdlib-jdk7-1.3.50" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-reflect-1.3.50" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlinx-coroutines-core-1.3.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-stdlib-1.3.50" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlinx-coroutines-core-common-1.3.0" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: kotlin-stdlib-common-1.3.50" level="project" />
+    <orderEntry type="library" exported="" scope="TEST" name="Gradle: classgraph-4.8.37" level="project" />
   </component>
 </module>

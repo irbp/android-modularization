@@ -1,13 +1,35 @@
 apply plugin: 'java-library'
 apply plugin: 'kotlin'
 
+repositories {
+    jcenter()
+}
+
 dependencies {
 
     def dependencies = rootProject.ext.dependencies
+    def testDependencies = rootProject.ext.testDependecies
 
     implementation dependencies.kotlin
     implementation dependencies.rxJava
     implementation dependencies.koin
+
+    testImplementation testDependencies.junit
+    testImplementation testDependencies.jupiter
+    testImplementation testDependencies.mockitoKotlin
+    testImplementation testDependencies.kotlinJUnit
+    testImplementation testDependencies.spekDsl
+    testImplementation testDependencies.spekJunit
+    testImplementation testDependencies.junitPlatformRunner
+    testImplementation testDependencies.koinTest
+
+    testRuntimeOnly dependencies.kotlinReflect
+}
+
+test {
+    useJUnitPlatform {
+        includeEngines 'spek2'
+    }
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8

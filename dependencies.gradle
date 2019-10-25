@@ -3,8 +3,8 @@ ext {
 
     //Android Config
     minSDK = 20
-    targetSDK = 28
-    compileSDK = 28
+    targetSDK = 29
+    compileSDK = 29
 
     buildTools = '3.5.0'
 
@@ -26,7 +26,7 @@ ext {
     rxAndroidVersion = '2.1.1'
 
     //Koin
-    koinVersion = '2.0.0-rc-1'
+    koinVersion = '2.0.1'
 
     //Retrofit
     retrofitVersion = '2.3.0'
@@ -41,6 +41,12 @@ ext {
     junitVersion = '4.12'
     espressoVersion = '3.1.1'
     runnerVersion = '1.1.1'
+
+    spekVersion = '2.0.8'
+
+    jUnitRunnerVersion = '1.6.0-M1'
+    jupiterVersion = '5.3.2'
+    mockitoKotlinVersion = '2.2.0' // https://github.com/nhaarman/mockito-kotlin/releases
 
     dependencies = [
             kotlin                : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion",
@@ -71,12 +77,21 @@ ext {
 
             room                  : "androidx.room:room-runtime:$roomVersion",
             roomRxJava            : "androidx.room:room-rxjava2:$roomVersion",
-            roomCompiler          : "androidx.room:room-compiler:$roomVersion"
+            roomCompiler          : "androidx.room:room-compiler:$roomVersion",
+
+            kotlinReflect         : "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
     ]
 
     testDependecies = [
             junit                 : "junit:junit:$junitVersion",
             espresso              : "androidx.test.espresso:espresso-core:$espressoVersion",
-            runner                : "androidx.test:runner:$runnerVersion"
+            runner                : "androidx.test:runner:$runnerVersion",
+            spekDsl               : "org.spekframework.spek2:spek-dsl-jvm:$spekVersion",
+            spekJunit             : "org.spekframework.spek2:spek-runner-junit5:$spekVersion",
+            junitPlatformRunner  : "org.junit.platform:junit-platform-runner:$jUnitRunnerVersion", // for using Spek with JUnit4
+            jupiter              : "org.junit.jupiter:junit-jupiter-api:$jupiterVersion", // for using Spek with JUnit4
+            kotlinJUnit          : "org.jetbrains.kotlin:kotlin-test-junit:$kotlinVersion",
+            mockitoKotlin        : "com.nhaarman.mockitokotlin2:mockito-kotlin:$mockitoKotlinVersion",
+            koinTest             : "org.koin:koin-test:$koinVersion",
     ]
 }

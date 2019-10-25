@@ -31,6 +31,7 @@ class AndroidJobsRepositoryImpl(
                     jobsCacheDataSource.updateData(listJobs)
                 else
                     jobsCacheDataSource.insertData(listJobs)
+
                 Single.just(listJobs)
             }
     }

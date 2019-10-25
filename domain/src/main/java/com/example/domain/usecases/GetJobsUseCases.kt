@@ -7,12 +7,19 @@ import io.reactivex.Observable
 import io.reactivex.Scheduler
 import io.reactivex.Single
 
-class GetJobsUseCases(
+/**
+ * I just update this Use case to has a interface, with this I can apply tests in the right way
+ */
+interface GetJobsUseCases {
+    fun execute(forceUpdate: Boolean): Single<List<AndroidJob>>
+}
+
+class GetJobsUseCasesImpl (
     private val repository: AndroidJobsRepository,
     private val scheduler: Scheduler
-) {
+) : GetJobsUseCases {
 
-    fun execute(forceUpdate: Boolean): Single<List<AndroidJob>> {
+    override fun execute(forceUpdate: Boolean): Single<List<AndroidJob>> {
         return repository.getJobs(forceUpdate)
             .subscribeOn(scheduler)
     }
